@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+.header__title {
+  color: red;
+  width: 200px;
+}
+.header__nav {
+  display: flex;
+  gap: 50px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.header__link {
+  color: black;
+}
+.header__link--about {
+  text-decoration: none;
+}/*# sourceMappingURL=Header.css.map */

@@ -1,10 +1,14 @@
+import '../styles/Header.css'
+import logo from '../assets/logo.png'
+
+
 function Header() {
   return (
-    <div>
-      <h1>Kasa</h1>
-      <nav>
-        <a href="#">Accueil</a>
-        <a href="#">A Propos</a>
+    <div className="header">
+      <img src={logo} alt= "logo de kasa" className="header__title" />
+      <nav className="header__nav">
+        <a href="/" className="header__link">Accueil</a>
+        <a href="/" className="header__link header__link--about">A Propos</a>
       </nav>
     </div>
   );

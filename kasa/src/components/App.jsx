@@ -1,9 +1,13 @@
-import Header from './Header'
+import Header from "./Header";
+import Banner from "./Banner";
 
 function App() {
-	return (
-		<Header />
-	)
+  return (
+    <div>
+      <Header />
+      <Banner />
+    </div>
+  );
 }
 
-export default App
+export default App;
