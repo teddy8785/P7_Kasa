@@ -5,7 +5,7 @@ function Banner() {
   return (
     <div className="banner">
       <img src={image_home} alt="" className="banner__photo" />
-      <p className="banner__text banner__text--contour">Chez vous,partout et ailleurs</p>
+      <p className="banner__text banner__text--contour">Chez vous, partout et ailleurs</p>
     </div>
   );
 }

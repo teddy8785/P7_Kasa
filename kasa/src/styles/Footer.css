@@ -1,0 +1,18 @@
+.footer {
+  background-color: black;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer__title {
+  width: 8%;
+  margin-top: 50px;
+}
+.footer__copyright {
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top: 30px;
+}/*# sourceMappingURL=Footer.css.map */
