@@ -2,15 +2,14 @@
   background-color: whitesmoke;
   border-radius: 20px;
   margin: 20px 80px;
-  padding: 40px 50px;
+  padding: 20px 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 50px;
-  grid-row-gap: 50px;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 .gallery__content {
   width: 100%;
-  background-color: red;
   border-radius: 10px;
   position: relative;
 }
@@ -30,4 +29,18 @@
   position: absolute;
   bottom: 10px;
   padding-left: 20px;
+}
+@media (max-width: 768px) {
+  .gallery {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 10px 20px;
+    padding: 10px 0px 0px 0px;
+  }
+  .gallery__title {
+    padding-left: 10px;
+    bottom: 0;
+  }
 }/*# sourceMappingURL=Gallery.css.map */

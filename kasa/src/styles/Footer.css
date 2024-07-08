@@ -1,18 +1,26 @@
 .footer {
   background-color: black;
-  height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .footer__title {
-  width: 8%;
+  width: 100px;
   margin-top: 50px;
 }
 .footer__copyright {
   color: white;
   text-align: center;
-  display: flex;
   margin-top: 30px;
+  margin-bottom: 20px;
+}
+@media (max-width: 768px) {
+  .footer__title {
+    margin-top: 40px;
+  }
+  .footer__copyright {
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=Footer.css.map */

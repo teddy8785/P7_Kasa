@@ -18,10 +18,25 @@
 
   &__link {
     color: black;
-    
+
   }
 
   &__link--about {
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      margin: 10px 20px;
+    }
+
+    &__title {
+      width: 130px;
+    }
+
+    &__nav {
+      gap: 20px;
+      font-size: 15px;
+    }
   }
 }

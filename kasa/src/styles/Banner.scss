@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   &__photo {
     display: flex;
-    position: relative;
     width: 100%;
     height: 160px;
     object-fit: cover;
@@ -19,13 +19,32 @@
     display: flex;
     position: absolute;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 35px;
     color: white;
     font-family: "montserrat", sans-serif;
+    margin-left: 10px
   }
 
   &__text--contour {
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      margin: 10px 20px;
+    }
+
+    &__photo {
+      height: 100px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+
+    &__text--contour {
+      -webkit-text-stroke-width: 0;
+    }
   }
 }
