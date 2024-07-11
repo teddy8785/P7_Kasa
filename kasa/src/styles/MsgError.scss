@@ -1,0 +1,26 @@
+.MsgError {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+
+    &__title {
+        color: #FF6060;
+        width: 40%;
+        margin-top: 50px;
+    }
+
+    &__message {
+        color: #FF6060;
+        font-size: 25px;
+        margin-top: 80px;
+    }
+
+    &__link {
+        color: black;
+        margin: 80px 0px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+}
