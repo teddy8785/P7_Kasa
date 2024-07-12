@@ -18,11 +18,14 @@
 
   &__link {
     color: black;
-
   }
 
-  &__link--about {
+  &__link--underline {
     text-decoration: none;
+  }
+
+  &__link--inactive {
+    pointer-events: none;
   }
 
   @media (max-width: 768px) {

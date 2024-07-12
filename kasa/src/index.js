@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import './styles/index.css';
 import Accueil from './pages/Accueil';
 import Apropos from './pages/Apropos';
@@ -11,6 +12,7 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
+        <Route path="/" element={<Navigate to="/Accueil" />} />
         <Route path="/Accueil" element={<Accueil />} />
         <Route path="/Apropos" element={<Apropos />} />
         <Route path="*" element={<Error />} />

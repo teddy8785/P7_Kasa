@@ -17,8 +17,11 @@
 .header__link {
   color: black;
 }
-.header__link--about {
+.header__link--underline {
   text-decoration: none;
+}
+.header__link--inactive {
+  pointer-events: none;
 }
 @media (max-width: 768px) {
   .header {
