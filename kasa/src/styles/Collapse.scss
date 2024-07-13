@@ -24,14 +24,16 @@
     &__chevron {
         margin-top: 7px;
         width: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &__chevron--anim {
+        transform: rotate(-180deg);
     }
 
     &__comment {
         margin: 0;
-       padding: 20px;
-    }
-    
-    &__comment--content {
+        padding: 20px;
         background-color: whitesmoke;
     }
 }

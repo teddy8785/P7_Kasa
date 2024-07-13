@@ -22,11 +22,13 @@
 .collapse__chevron {
   margin-top: 7px;
   width: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.collapse__chevron--anim {
+  transform: rotate(-180deg);
 }
 .collapse__comment {
   margin: 0;
   padding: 20px;
-}
-.collapse__comment--content {
   background-color: whitesmoke;
 }/*# sourceMappingURL=Collapse.css.map */
