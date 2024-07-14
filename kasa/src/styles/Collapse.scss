@@ -24,7 +24,7 @@
     &__chevron {
         margin-top: 7px;
         width: 20px;
-        transition: transform 0.3s ease-in-out;
+        transition: transform 0.5s ease-in-out;
     }
 
     &__chevron--anim {
@@ -32,8 +32,46 @@
     }
 
     &__comment {
+        display: flex;
+        position: relative;
+        z-index: -87;
         margin: 0;
         padding: 20px;
         background-color: whitesmoke;
+        
+    }
+
+    &__comment--anim {
+        animation-duration: 0.5s;
+        animation-name: slidein;
+    }
+
+    &__comment--reverse {
+        animation-duration: 0.5s;
+        animation-name: slideout;
+    }
+
+    @keyframes slidein {
+        0% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideout {
+        0% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(-50px);
+        }
     }
 }
