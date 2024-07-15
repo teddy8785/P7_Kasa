@@ -1,0 +1,30 @@
+.slideshow {
+  margin: 30px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  position: relative;
+}
+.slideshow__img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-radius: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.slideshow__arrow {
+  position: absolute;
+  cursor: pointer;
+}
+.slideshow__arrow--left {
+  left: 20px;
+}
+.slideshow__arrow--right {
+  right: 20px;
+}/*# sourceMappingURL=Slideshow.css.map */

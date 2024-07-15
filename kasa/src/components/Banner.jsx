@@ -15,7 +15,7 @@ function Banner() {
         <p className="banner__text banner__text--contour">Chez vous, partout et ailleurs</p>
       }
       {(location.pathname === '/Apropos') &&
-        <img src={image_apropos} alt="cours d'eau en montagne" className="banner__photo" />
+        <img src={image_apropos} alt="cours d'eau en montagne" className="banner__photo--apropos" />
       }
     </div>
   );

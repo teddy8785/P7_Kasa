@@ -74,4 +74,10 @@
             transform: translateY(-50px);
         }
     }
+
+    @media (max-width: 768px) {
+        &__content {
+          margin: 20px;
+        }
+      }
 }
