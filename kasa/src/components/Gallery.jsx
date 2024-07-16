@@ -6,16 +6,18 @@ function Gallery() {
 
   return (
     <div className="gallery">
-     {
-        data.map(post => (
-              <article className="gallery__content" key={post.id}>
-                <NavLink to={`/Logements/${post.id}`}>
-                <img className="gallery__img" src={post.cover} alt=""></img>
+      {
+        data.map(post => {
+          return (
+            <article className="gallery__content" id={post.id} key={post.id}>
+              <NavLink to={`/Logements/${encodeURIComponent(post.title)}`}>
+                <img className="gallery__img" src={post.cover} alt={post.title}></img>
                 <p className="gallery__title">{post.title}</p>
-                </NavLink>
+              </NavLink>
             </article>
-        ))
-     }
+          );
+        })
+      }
     </div>
   );
 }
