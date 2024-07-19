@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 400px;
+  height: 400px;
   position: relative;
 }
 .slideshow__img {
@@ -27,4 +27,30 @@
 }
 .slideshow__arrow--right {
   right: 20px;
+}
+.slideshow__arrow--delete {
+  display: none;
+}
+.slideshow__dots {
+  color: white;
+  position: absolute;
+  bottom: 20px;
+}
+.slideshow__dots--delete {
+  display: none;
+}
+@media (max-width: 768px) {
+  .slideshow {
+    height: 250px;
+    margin: 30px 20px;
+  }
+  .slideshow__arrow {
+    width: 10px;
+  }
+  .slideshow__arrow--left {
+    left: 10px;
+  }
+  .slideshow__arrow--right {
+    right: 10px;
+  }
 }/*# sourceMappingURL=Slideshow.css.map */

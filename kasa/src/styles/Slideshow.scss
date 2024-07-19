@@ -4,7 +4,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 400px;
+    height: 400px;
     position: relative;
 
     &__img {
@@ -28,5 +28,38 @@
 
     &__arrow--right {
         right: 20px;
+    }
+
+    &__arrow--delete {
+        display: none;
+    }
+
+    &__dots {
+        color: white;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    &__dots--delete {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        & {
+            height: 250px;
+            margin: 30px 20px;
+        }
+
+        &__arrow {
+            width: 10px;
+        }
+
+        &__arrow--left {
+            left: 10px;
+        }
+
+        &__arrow--right {
+            right: 10px;
+        }
     }
 }

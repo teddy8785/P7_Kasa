@@ -1,5 +1,6 @@
 import Header from "../components/Header";
 import Slideshow from "../components/Slideshow";
+import Information  from "../components/Information";
 import Footer from "../components/Footer";
 
 function Logements() {
@@ -7,6 +8,7 @@ function Logements() {
     <div>
       <Header />
       <Slideshow />
+      <Information />
       <Footer />
     </div>
   );
