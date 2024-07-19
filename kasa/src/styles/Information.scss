@@ -1,8 +1,74 @@
 .information {
-    display:flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 80px;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+    }
 
     &__title {
-        color: red;
+        color: #FF6060;
         font-weight: 400;
+        margin: 0;
+    }
+
+    &__location {
+        margin-top: 5px;
+        font-weight: 600;
+    }
+
+    &__filters--content {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    &__filters {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        width: 160px;
+        height: 10px;
+        padding: 10px;
+        background-color: #FF6060;
+        border-radius: 10px;
+    }
+
+    &__portrait {
+        display: flex; 
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    &__host {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    &__name {
+        width: 30%;
+        color: #FF6060;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        width: 40%;
+    }
+
+    &__rating {
+        display: flex; 
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__star {
+        width: 24px;
+        height: 24px;
     }
 }
