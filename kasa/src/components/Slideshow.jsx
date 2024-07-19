@@ -2,9 +2,15 @@ import React from 'react';
 import '../styles/Slideshow.css';
 import arrowLeft from '../assets/arrow_left.png';
 import arrowRight from '../assets/arrow_right.png';
+import data from "../Data.json";
+
+
+const dataId = data.map(post => post.id)
+    console.log(dataId[0])
 
 function Slideshow() {
-    return (
+
+return (
         <div className="slideshow">
             <img className="slideshow__img" src="" alt="" />
             <img id="arrow_left" className="slideshow__arrow slideshow__arrow--left" src={arrowLeft} alt="fleche gauche" />
