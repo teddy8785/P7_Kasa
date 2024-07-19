@@ -11,7 +11,7 @@
 .collapse__content {
   display: flex;
   flex-direction: column;
-  margin: 20px 150px;
+  margin: 30px 150px;
   gap: 30px;
 }
 .collapse__title {
