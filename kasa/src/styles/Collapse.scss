@@ -9,10 +9,27 @@
     padding-right: 15px;
 
     &__content {
+        width: 100%;
+    }
+
+    &__content--apropos {
         display: flex;
         flex-direction: column;
-        margin: 30px 150px;
         gap: 30px;
+        margin: 30px 150px;
+    }
+
+    &__content--logement {
+        display: flex;
+        justify-content: space-around;
+        gap: 80px;
+        margin: 0px 80px 50px 80px;
+    }
+
+    &__puce {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
     }
 
     &__title {
@@ -39,7 +56,7 @@
         margin: 0;
         padding: 20px;
         background-color: whitesmoke;
-        
+
     }
 
     &__comment--anim {
@@ -78,7 +95,7 @@
 
     @media (max-width: 768px) {
         &__content {
-          margin: 20px;
+            margin: 20px;
         }
-      }
+    }
 }

@@ -48,17 +48,17 @@
     &__host {
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: space-between;
     }
 
     &__name {
-        width: 30%;
+        width: 70px;
         color: #FF6060;
     }
 
     &__photo {
         border-radius: 50%;
-        width: 40%;
+        width: 70px;
     }
 
     &__rating {
@@ -70,5 +70,12 @@
     &__star {
         width: 24px;
         height: 24px;
+    }
+
+    
+    @media (max-width: 768px) {
+        & {
+            margin: 30px 20px;
+        }
     }
 }

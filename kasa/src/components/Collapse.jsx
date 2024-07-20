@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import "../styles/Collapse.css";
-import collapseData from "../Collapse.json";
 import chevronUp from "../assets/chevron-up-solid.svg";
 
-function Collapse() {
+function Collapse({title , paragraph}) {
 
     const [expandedSections, setExpandedSections] = useState([]);
     const [reversedSections, setReversedSections] = useState([]);
@@ -14,33 +13,30 @@ function Collapse() {
             setExpandedSections(expandedSections.filter(secIndex => secIndex !== index));
             setTimeout(() => {
                 setReversedSections(reversedSections.filter(secIndex => secIndex !== index));
-            }, 300); // La durée de l'animation (0.5s)
+            }, 300);
         } else {
             setExpandedSections([...expandedSections, index]);
         }
     };
 
     return (
-        <div className="collapse__content">
-            {collapseData.map((item, index) => (
-                <div key={index}>
+    
+        <div className='collapse__content'>
                     <div className="collapse">
-                        <p className="collapse__title">{item.title}</p>
+                        <p className="collapse__title">{title}</p>
                         <img
-                            className={`collapse__chevron ${expandedSections.includes(index) ? 'collapse__chevron--anim' : ''}`}
-                            onClick={() => toggleSection(index)}
+                            className={`collapse__chevron ${expandedSections.includes() ? 'collapse__chevron--anim' : ''}`}
+                            onClick={() => toggleSection()}
                             src={chevronUp}
                             alt="Chevron"
                         />
                     </div>
-                    {(expandedSections.includes(index) || reversedSections.includes(index)) && (
-                        <p className={`collapse__comment ${expandedSections.includes(index) ? 'collapse__comment--anim' : ''} ${reversedSections.includes(index) ? 'collapse__comment--reverse' : ''}`}>
-                            {item.paragraph}
-                        </p>
+                    {(expandedSections.includes() || reversedSections.includes()) && (
+                        <span className={`collapse__comment ${expandedSections.includes() ? 'collapse__comment--anim' : ''} ${reversedSections.includes() ? 'collapse__comment--reverse' : ''}`}>
+                            {paragraph}
+                        </span>
                     )}
                 </div>
-            ))}
-        </div>
     );
 }
 

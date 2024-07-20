@@ -10,9 +10,9 @@ function Information() {
     const { id } = useParams();
     const foundItem = data.find(item => item.id === id);
 
-    const { title, location, tags, host} = foundItem;
+    const { title, location, tags, host, rating} = foundItem;
     const { name: hostName, picture: hostPicture } = host;
-    
+
     return (
         <div className="information">
             <div className="information__content">
@@ -30,7 +30,12 @@ function Information() {
                 <img className="information__photo" src={hostPicture} alt={`portrait de ${hostName}`} />
             </div>
             <div className="information__rating">
-               
+                {Array.from({ length: rating }).map((_, index) => (
+                    <img key={`star-${index}`} src={starSolid} alt="Étoile pleine" className="information__star" />
+                ))}
+                {Array.from({ length: 5 - rating }).map((_, index) => (
+                    <img key={`empty-star-${index}`} src={starRegular} alt="Étoile vide" className="information__star" />
+                ))}
             </div>
 
             <div>

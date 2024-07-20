@@ -42,15 +42,15 @@
 .information__host {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: space-between;
 }
 .information__name {
-  width: 30%;
+  width: 70px;
   color: #FF6060;
 }
 .information__photo {
   border-radius: 50%;
-  width: 40%;
+  width: 70px;
 }
 .information__rating {
   display: flex;
@@ -60,4 +60,9 @@
 .information__star {
   width: 24px;
   height: 24px;
+}
+@media (max-width: 768px) {
+  .information {
+    margin: 30px 20px;
+  }
 }/*# sourceMappingURL=Information.css.map */
