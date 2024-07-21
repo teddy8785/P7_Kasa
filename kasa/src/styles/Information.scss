@@ -6,6 +6,7 @@
     &__content {
         display: flex;
         flex-direction: column;
+        width: 80%
     }
 
     &__title {
@@ -22,6 +23,7 @@
     &__filters--content {
         display: flex;
         gap: 10px;
+        width: 100%;
         align-items: center;
     }
 
@@ -31,7 +33,8 @@
         justify-content: center;
         color: white;
         font-weight: 600;
-        width: 160px;
+        font-size: 17px;
+        width: 150px;
         height: 10px;
         padding: 10px;
         background-color: #FF6060;
@@ -39,7 +42,7 @@
     }
 
     &__portrait {
-        display: flex; 
+        display: flex;
         flex-direction: column;
         align-items: flex-end;
         gap: 20px;
@@ -49,9 +52,11 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        gap: 5px;
     }
 
     &__name {
+        text-align: end;
         width: 70px;
         color: #FF6060;
     }
@@ -62,20 +67,49 @@
     }
 
     &__rating {
-        display: flex; 
-        align-items: center;
+        display: flex;
         gap: 8px;
     }
 
     &__star {
-        width: 24px;
-        height: 24px;
+        width: 18px;
+        height: 18px;
     }
 
-    
+
     @media (max-width: 768px) {
         & {
-            margin: 30px 20px;
+            margin: 30px 20px 10px 20px;
+            display: inherit;
+        }
+
+        &__content {
+            width: 100%
+        }
+
+        &__filters {
+            font-size: 10px;
+            padding-left: 5px;
+            padding-right: 5px
+        }
+
+        &__filters--content {
+            width: 100%;
+        }
+
+        &__portrait {
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &__photo {
+            width: 60px;
+        }
+
+        &__rating {
+            gap: 4px;
+            display: inherit;
         }
     }
 }

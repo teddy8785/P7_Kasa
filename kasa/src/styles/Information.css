@@ -6,6 +6,7 @@
 .information__content {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 .information__title {
   color: #FF6060;
@@ -19,6 +20,7 @@
 .information__filters--content {
   display: flex;
   gap: 10px;
+  width: 100%;
   align-items: center;
 }
 .information__filters {
@@ -27,7 +29,8 @@
   justify-content: center;
   color: white;
   font-weight: 600;
-  width: 160px;
+  font-size: 17px;
+  width: 150px;
   height: 10px;
   padding: 10px;
   background-color: #FF6060;
@@ -43,8 +46,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 5px;
 }
 .information__name {
+  text-align: end;
   width: 70px;
   color: #FF6060;
 }
@@ -54,15 +59,38 @@
 }
 .information__rating {
   display: flex;
-  align-items: center;
   gap: 8px;
 }
 .information__star {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
 }
 @media (max-width: 768px) {
   .information {
-    margin: 30px 20px;
+    margin: 30px 20px 10px 20px;
+    display: inherit;
+  }
+  .information__content {
+    width: 100%;
+  }
+  .information__filters {
+    font-size: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .information__filters--content {
+    width: 100%;
+  }
+  .information__portrait {
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .information__photo {
+    width: 60px;
+  }
+  .information__rating {
+    gap: 4px;
+    display: inherit;
   }
 }/*# sourceMappingURL=Information.css.map */

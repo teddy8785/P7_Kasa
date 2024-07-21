@@ -1,6 +1,6 @@
 .collapse {
     background-color: #FF6060;
-    height: 50px;
+    height: 40px;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -22,8 +22,8 @@
     &__content--logement {
         display: flex;
         justify-content: space-around;
-        gap: 80px;
-        margin: 0px 80px 50px 80px;
+        gap: 40px;
+        margin: 0px 80px 30px 80px;
     }
 
     &__puce {
@@ -94,8 +94,15 @@
     }
 
     @media (max-width: 768px) {
-        &__content {
+        &__content--apropos {
             margin: 20px;
+        }
+
+        &__content--logement {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            margin: 0px 20px 20px 20px;
         }
     }
 }

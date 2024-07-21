@@ -37,10 +37,6 @@ function Information() {
                     <img key={`empty-star-${index}`} src={starRegular} alt="Étoile vide" className="information__star" />
                 ))}
             </div>
-
-            <div>
-                
-            </div>
             </div>
         </div>
     )
