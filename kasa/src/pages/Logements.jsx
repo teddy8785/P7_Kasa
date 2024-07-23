@@ -4,12 +4,16 @@ import Information from "../components/Information";
 import Collapse from "../components/Collapse";
 import Footer from "../components/Footer";
 import data from '../Data.json';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 
 function Logements() {
 
   const { id } = useParams();
   const foundItem = data.find(item => item.id === id);
+
+  if (!foundItem) {
+    return <Navigate to="/Error" />;
+  }
 
   const { description, equipments } = foundItem;
 
@@ -19,15 +23,15 @@ function Logements() {
       <Slideshow />
       <Information />
       <div className="collapse__content--logement">
-      <Collapse 
-      title="Description"
-      paragraph={description}/>
-      <Collapse 
-      title="Équipments"
-      paragraph={<ul className="collapse__puce">{equipments.map((item, index) => (
-        <li key= {index}>{item}</li>
-      ))}</ul>}
-      />
+        <Collapse
+          title="Description"
+          paragraph={description} />
+        <Collapse
+          title="Équipments"
+          paragraph={<ul className="collapse__puce">{equipments.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}</ul>}
+        />
       </div>
       <Footer />
     </div>

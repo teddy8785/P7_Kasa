@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import "../styles/Collapse.css";
 import chevronUp from "../assets/chevron-up-solid.svg";
 
-function Collapse({title , paragraph}) {
-
+function Collapse({ title, paragraph, index }) {
     const [expandedSections, setExpandedSections] = useState([]);
     const [reversedSections, setReversedSections] = useState([]);
 
@@ -20,23 +19,22 @@ function Collapse({title , paragraph}) {
     };
 
     return (
-    
         <div className='collapse__content'>
-                    <div className="collapse">
-                        <p className="collapse__title">{title}</p>
-                        <img
-                            className={`collapse__chevron ${expandedSections.includes() ? 'collapse__chevron--anim' : ''}`}
-                            onClick={() => toggleSection()}
-                            src={chevronUp}
-                            alt="Chevron"
-                        />
-                    </div>
-                    {(expandedSections.includes() || reversedSections.includes()) && (
-                        <span className={`collapse__comment ${expandedSections.includes() ? 'collapse__comment--anim' : ''} ${reversedSections.includes() ? 'collapse__comment--reverse' : ''}`}>
-                            {paragraph}
-                        </span>
-                    )}
-                </div>
+            <div className="collapse">
+                <p className="collapse__title">{title}</p>
+                <img
+                    className={`collapse__chevron ${expandedSections.includes(index) ? 'collapse__chevron--anim' : ''}`}
+                    onClick={() => toggleSection(index)}
+                    src={chevronUp}
+                    alt="Chevron"
+                />
+            </div>
+            {(expandedSections.includes(index) || reversedSections.includes(index)) && (
+                <span className={`collapse__comment ${expandedSections.includes(index) ? 'collapse__comment--anim' : ''} ${reversedSections.includes(index) ? 'collapse__comment--reverse' : ''}`}>
+                    {paragraph}
+                </span>
+            )}
+        </div>
     );
 }
 
