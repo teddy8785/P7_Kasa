@@ -9,7 +9,6 @@
     grid-row-gap: 30px;
 
     &__content {
-        width: 100%;
         border-radius: 10px;
         position: relative;
     }
@@ -39,9 +38,8 @@
 
     @media (max-width: 768px) {
         & {
+            grid-template-columns: 1fr;
             background-color: white;
-            display: flex;
-            flex-direction: column;
             gap: 15px;
             margin: 10px 20px;
             padding: 10px 0px 0px 0px;
@@ -50,6 +48,14 @@
         &__title {
             padding-left: 10px;
             bottom: 0;
+        }
+
+        &__img {
+            height: 220px;
+        }
+
+        &__link {
+            width: 100%;
         }
     }
 }

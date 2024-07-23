@@ -68,23 +68,23 @@
 
     &__rating {
         display: flex;
-        gap: 8px;
+        gap: 15px;
     }
 
     &__star {
-        width: 18px;
-        height: 18px;
+        width: 24px;
+        height: 24px;
     }
 
 
     @media (max-width: 768px) {
         & {
-            margin: 30px 20px 10px 20px;
+            margin: 30px 15px 10px 15px;
             display: inherit;
         }
 
         &__content {
-            width: 100%
+            width: 100%;
         }
 
         &__filters {
@@ -101,6 +101,7 @@
             flex-direction: row-reverse;
             align-items: center;
             justify-content: space-between;
+            gap: 0;
         }
 
         &__photo {
@@ -108,8 +109,12 @@
         }
 
         &__rating {
-            gap: 4px;
-            display: inherit;
+            gap: 8px;
+        }
+
+        &__star {
+            width: 18px;
+            height: 18px;
         }
     }
 }

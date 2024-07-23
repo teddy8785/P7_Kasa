@@ -59,15 +59,15 @@
 }
 .information__rating {
   display: flex;
-  gap: 8px;
+  gap: 15px;
 }
 .information__star {
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  height: 24px;
 }
 @media (max-width: 768px) {
   .information {
-    margin: 30px 20px 10px 20px;
+    margin: 30px 15px 10px 15px;
     display: inherit;
   }
   .information__content {
@@ -85,12 +85,16 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    gap: 0;
   }
   .information__photo {
     width: 60px;
   }
   .information__rating {
-    gap: 4px;
-    display: inherit;
+    gap: 8px;
+  }
+  .information__star {
+    width: 18px;
+    height: 18px;
   }
 }/*# sourceMappingURL=Information.css.map */

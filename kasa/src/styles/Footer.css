@@ -3,25 +3,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100%;
-}
-.footer__title {
-  width: 100px;
-  margin-top: 50px;
+  justify-content: flex-end;
+  height: 190px;
+  width: 100%;
 }
 .footer__copyright {
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 @media (max-width: 768px) {
-  .footer__title {
-    margin-top: 40px;
-  }
   .footer__copyright {
     width: 150px;
     margin-top: 10px;
     margin-bottom: 50px;
+    font-size: 15px;
   }
 }/*# sourceMappingURL=Footer.css.map */

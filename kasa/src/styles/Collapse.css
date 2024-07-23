@@ -1,6 +1,6 @@
 .collapse {
   background-color: #FF6060;
-  height: 40px;
+  height: 60px;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -79,6 +79,9 @@
   }
 }
 @media (max-width: 768px) {
+  .collapse {
+    height: 50px;
+  }
   .collapse__content--apropos {
     margin: 20px;
   }
