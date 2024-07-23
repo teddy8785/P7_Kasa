@@ -3,17 +3,17 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    margin: 80px 60px 0px 60px;
 
     &__title {
         color: #FF6060;
-        width: 29%;
+        width: 362px;
         margin-top: 50px;
     }
 
     &__message {
         color: #FF6060;
-        font-size: 25px;
+        font-size: 40px;
         margin-top: 80px;
     }
 
@@ -22,5 +22,19 @@
         margin: 80px 0px;
         font-size: 14px;
         font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+
+        margin: 40px 60px 0px 60px;
+
+        &__title {
+            width: 190px;
+        }
+
+        &__message {
+            font-size: 20px;
+            text-align: center;
+        }
     }
 }
