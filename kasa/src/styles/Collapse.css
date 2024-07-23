@@ -8,6 +8,9 @@
   padding-left: 15px;
   padding-right: 15px;
 }
+.collapse__logement {
+  border-radius: 15px;
+}
 .collapse__content {
   width: 100%;
 }
@@ -46,9 +49,10 @@
   display: flex;
   position: relative;
   z-index: -87;
-  margin: 0;
+  margin-top: -10px;
   padding: 20px;
   background-color: whitesmoke;
+  border-radius: 0px 0px 10px 10px;
 }
 .collapse__comment--anim {
   animation-duration: 0.5s;

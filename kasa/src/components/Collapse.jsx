@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../styles/Collapse.css";
 import chevronUp from "../assets/chevron-up-solid.svg";
 
-function Collapse({ title, paragraph, index }) {
+function Collapse({ title, paragraph, index, customClass }) {
     const [expandedSections, setExpandedSections] = useState([]);
     const [reversedSections, setReversedSections] = useState([]);
 
@@ -20,7 +20,7 @@ function Collapse({ title, paragraph, index }) {
 
     return (
         <div className='collapse__content'>
-            <div className="collapse">
+            <div className={`collapse ${customClass}`}>
                 <p className="collapse__title">{title}</p>
                 <img
                     className={`collapse__chevron ${expandedSections.includes(index) ? 'collapse__chevron--anim' : ''}`}

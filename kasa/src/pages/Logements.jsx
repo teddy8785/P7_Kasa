@@ -25,12 +25,15 @@ function Logements() {
       <div className="collapse__content--logement">
         <Collapse
           title="Description"
-          paragraph={description} />
+          paragraph={description} 
+          customClass="collapse__logement"
+          />
         <Collapse
           title="Équipments"
           paragraph={<ul className="collapse__puce">{equipments.map((item, index) => (
             <li key={index}>{item}</li>
           ))}</ul>}
+          customClass="collapse__logement"
         />
       </div>
       <Footer />
