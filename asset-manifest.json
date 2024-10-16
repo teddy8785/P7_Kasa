@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/p7_kasa/static/css/main.bb6873d0.css",
-    "main.js": "/p7_kasa/static/js/main.ed1bcc65.js",
-    "static/media/image_home.jpg": "/p7_kasa/static/media/image_home.0f820b85d9a6a7e177b3.jpg",
-    "static/media/image_apropos.png": "/p7_kasa/static/media/image_apropos.640955dab8c7bff25514.png",
-    "static/media/logo-kasa-white.svg": "/p7_kasa/static/media/logo-kasa-white.a704cd7679e4c79056dcca5dc733d583.svg",
-    "index.html": "/p7_kasa/index.html",
-    "static/media/star-solid-grey.svg": "/p7_kasa/static/media/star-solid-grey.4f64c0ce0feb27eb392e68a905192bc6.svg",
-    "static/media/star-solid-red.svg": "/p7_kasa/static/media/star-solid-red.5be82ce5212c8ccbb7f1e0cde4051c80.svg",
-    "static/media/chevron-up-solid.svg": "/p7_kasa/static/media/chevron-up-solid.ddf9f0067743c475a474c43fffdf3451.svg",
-    "main.bb6873d0.css.map": "/p7_kasa/static/css/main.bb6873d0.css.map",
-    "main.ed1bcc65.js.map": "/p7_kasa/static/js/main.ed1bcc65.js.map"
+    "main.css": "/p7_Kasa/static/css/main.bb6873d0.css",
+    "main.js": "/p7_Kasa/static/js/main.a55742d5.js",
+    "static/media/image_home.jpg": "/p7_Kasa/static/media/image_home.0f820b85d9a6a7e177b3.jpg",
+    "static/media/image_apropos.png": "/p7_Kasa/static/media/image_apropos.640955dab8c7bff25514.png",
+    "static/media/logo-kasa-white.svg": "/p7_Kasa/static/media/logo-kasa-white.a704cd7679e4c79056dcca5dc733d583.svg",
+    "index.html": "/p7_Kasa/index.html",
+    "static/media/star-solid-grey.svg": "/p7_Kasa/static/media/star-solid-grey.4f64c0ce0feb27eb392e68a905192bc6.svg",
+    "static/media/star-solid-red.svg": "/p7_Kasa/static/media/star-solid-red.5be82ce5212c8ccbb7f1e0cde4051c80.svg",
+    "static/media/chevron-up-solid.svg": "/p7_Kasa/static/media/chevron-up-solid.ddf9f0067743c475a474c43fffdf3451.svg",
+    "main.bb6873d0.css.map": "/p7_Kasa/static/css/main.bb6873d0.css.map",
+    "main.a55742d5.js.map": "/p7_Kasa/static/js/main.a55742d5.js.map"
   },
   "entrypoints": [
     "static/css/main.bb6873d0.css",
-    "static/js/main.ed1bcc65.js"
+    "static/js/main.a55742d5.js"
   ]
 }
