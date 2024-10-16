@@ -8,7 +8,7 @@ function Header() {
 
   const appPaths = ['/Accueil', '/Apropos'];
 
-  // Supposons que `data` soit votre tableau d'objets avec des identifiants uniques
+  // data un tableau d'objets avec des identifiants uniques
   data.forEach(post => {
     appPaths.push(`/Logements/${post.id}`);
   });
